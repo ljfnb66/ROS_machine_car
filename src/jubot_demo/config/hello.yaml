@@ -7,7 +7,7 @@ controllers: {
        type: diff_controller,
        #参考坐标
        base_frame_id: base_footprint, 
-       #两个轮子之间的间距
+       #两个轮子之间的间距a
        base_width: 0.2,
        #控制频率
        ticks_meter: 2000, 
