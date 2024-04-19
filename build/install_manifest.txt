@@ -1,0 +1,13 @@
+/home/feifei/code/rosPrj/catkin_ws01/install/_setup_util.py
+/home/feifei/code/rosPrj/catkin_ws01/install/env.sh
+/home/feifei/code/rosPrj/catkin_ws01/install/setup.bash
+/home/feifei/code/rosPrj/catkin_ws01/install/local_setup.bash
+/home/feifei/code/rosPrj/catkin_ws01/install/setup.sh
+/home/feifei/code/rosPrj/catkin_ws01/install/local_setup.sh
+/home/feifei/code/rosPrj/catkin_ws01/install/setup.zsh
+/home/feifei/code/rosPrj/catkin_ws01/install/local_setup.zsh
+/home/feifei/code/rosPrj/catkin_ws01/install/.rosinstall
+/home/feifei/code/rosPrj/catkin_ws01/install/lib/pkgconfig/jubot_demo.pc
+/home/feifei/code/rosPrj/catkin_ws01/install/share/jubot_demo/cmake/jubot_demoConfig.cmake
+/home/feifei/code/rosPrj/catkin_ws01/install/share/jubot_demo/cmake/jubot_demoConfig-version.cmake
+/home/feifei/code/rosPrj/catkin_ws01/install/share/jubot_demo/package.xml

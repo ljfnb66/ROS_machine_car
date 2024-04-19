@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/feifei/code/rosPrj/catkin_ws01/install/setup.sh

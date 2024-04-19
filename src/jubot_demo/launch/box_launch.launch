@@ -1,0 +1,29 @@
+<launch>
+
+  <!-- 将 urdf 文件内容设置进参数服务器 -->
+  <!-- <param name="robot_description" textfile="$(find jubot_demo)/urdf/box_urdf.urdf" /> -->
+
+  <!-- 使用xacro优化urdf文件 -->
+  <!-- <param name="robot_description" command="$(find xacro)/xacro $(find jubot_demo)/urdf/xacro/my_base.urdf.xacro" /> -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find jubot_demo)/urdf/xacro/my_car_camera.urdf.xacro" />
+
+  <!-- 启动 rviz -->
+  <!-- <node pkg="rviz" type="rviz" name="rviz" /> -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find jubot_demo)/config/rviz/show_four_wheel_car.rviz" />
+
+<!-- 配置 arbotix 节点 -->
+  <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+    <rosparam file="$(find jubot_demo)/config/hello.yaml" command="load" />
+    <param name="sim" value="true" />
+  </node>
+
+
+  <!-- 启动机器人状态和关节状态发布节点 -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+
+  <!-- 启动图形化的控制关节运动节点 -->
+  <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+
+
+</launch>

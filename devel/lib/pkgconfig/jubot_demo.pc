@@ -1,0 +1,8 @@
+prefix=/home/feifei/code/rosPrj/catkin_ws01/devel
+
+Name: jubot_demo
+Description: Description of jubot_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
